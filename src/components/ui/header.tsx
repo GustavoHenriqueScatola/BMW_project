@@ -6,37 +6,51 @@ import { FiUser, FiShoppingCart, FiMapPin, FiChevronDown } from "react-icons/fi"
 import NextImage from "next/image";
 
 const navLinkStyles = {
-  fontSize: "13px",
-  fontWeight: "400",
-  pb: "2",
+  fontSize: "16px",
+  fontWeight: "500",
+  lineHeight: "26px",
+  color: "white",
+  cursor: "pointer",
   transition: "all 0.2s",
-  _hover: { 
-    textDecoration: "none", 
-    borderBottom: "2px solid white" 
+  _hover: {
+    textDecoration: "none",
+    borderBottom: "2px solid white",
   },
 }
 
 export const Header = () => {
   return (
 
-    <Box 
-      position="absolute" 
-      top="0" 
-      left="0" 
-      width="100%" 
-      zIndex="100" 
+    <Box
+      position="absolute"
+      top="0"
+      left="0"
+      width="100%"
+      zIndex="6050"
       bg="transparent"
+      height="84px"
+      transition="background 0.05s ease-in-out"
     >
       <Flex
         as="nav"
         align="center"
         justify="space-between"
-        px={{ base: "20px", md: "80px" }}
-        py="20px"
+        mx="76.5px"
+        px="12px"
+        maxW="1752px"
+        height="100%"
         color="white"
       >
         <HStack gap="8">
-          <Box position='relative' width='50px' height='50px'>
+          <Box
+            position="relative"
+            width="52px"
+            height="52px"
+            paddingRight="60px"
+            cursor="pointer"
+            transition="transform 0.25s ease-in-out"
+            _hover={{ transform: "scale(1.05)" }}
+          >
             <NextImage src="/white_logo.svg" alt="BMW Logo" fill />
           </Box>
           
@@ -45,16 +59,16 @@ export const Header = () => {
               Modelos & Configure o seu
             </Link>
             <Link href="#" display="flex" alignItems="center" gap="1" {...navLinkStyles}>
-              Elétricos <FiChevronDown size={13} />
+              Elétricos <FiChevronDown size={28} />
             </Link>
             <Link href="#" display="flex" alignItems="center" gap="1" {...navLinkStyles}>
-              Compre Online <FiChevronDown size={13} />
+              Compre Online <FiChevronDown size={28} />
             </Link>
             <Link href="#" display="flex" alignItems="center" gap="1" {...navLinkStyles}>
-              Descubra a BMW <FiChevronDown size={13} />
+              Descubra a BMW <FiChevronDown size={28} />
             </Link>
             <Link href="#" display="flex" alignItems="center" gap="1" {...navLinkStyles}>
-              Recall <FiChevronDown size={13} />
+              Recall <FiChevronDown size={28} />
             </Link>
             <Link href="#" {...navLinkStyles}>
               Agende o seu Test Drive
@@ -62,14 +76,14 @@ export const Header = () => {
           </HStack>
         </HStack>
 
-        <HStack gap="5">
+        <HStack gap="5" color="white">
           <FiUser size="20" cursor="pointer" />
           <FiShoppingCart size="20" cursor="pointer" />
           <FiMapPin size="20" cursor="pointer" />
         </HStack>
       </Flex>
 
-      <Box height="1px" bg="whiteAlpha.200" mx={{ base: "20px", md: "80px" }} />
+      <Box height="1px" bg="whiteAlpha.900" mx={{ base: "20px", md: "80px" }} />
     </Box>
   );
 };

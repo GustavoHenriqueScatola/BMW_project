@@ -31,32 +31,30 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
       right="50%"
       marginLeft="-50vw"
       marginRight="-50vw"
-      h={{ base: "400px", md: "570.609px" }} 
+      h={{ base: "450px", md: "639.75px" }} 
       overflow="hidden"
       bg="black"
     >
-
       <NextImage
         src={image}
         alt={alt}
         fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
+        style={{ objectFit: "cover", objectPosition: "center center" }}
         sizes="100vw"
         priority
       />
 
-      {/* Gradiente BMW Signature */}
       <Box
         position="absolute"
         top="0"
         left="0"
         w="100%"
         h="100%"
-        bgGradient="linear(to-r, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 30%, transparent 70%)"
         zIndex="1"
+        background="radial-gradient(circle at 0% 0%, rgba(0,0,0,0.9) 0%, transparent 50%), linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, transparent 100%), linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 20%)"
+        pointerEvents="none"
       />
 
-      {/* Conteúdo Centralizado Verticalmente */}
       <Flex
         position="absolute"
         top="0"
@@ -64,16 +62,17 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
         h="100%"
         w="100%"
         align="center"
-        px={{ base: "30px", md: "100px", lg: "150px" }} 
+        justify="flex-start" 
+        px={{ base: "20px", md: "32px", lg: "48px" }} 
         zIndex="2"
       >
-        <Box color="white" maxW="550px">
+        <Box color="white" maxW="696px" textAlign="left">
           <Text
             as="h2"
-            fontSize={{ base: "26px", md: "38px" }}
+            fontSize={{ base: "32px", md: "45px" }}
             fontWeight="300"
-            lineHeight="1.1"
-            mb="6"
+            lineHeight={{ base: "1.1", md: "62px" }}
+            mb="4"
             {...bmwTechnicalStyles}
           >
             {title}
@@ -83,9 +82,10 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
             <Box mb="10">
               {description && (
                 <Text
-                  fontSize="16px"
+                  fontSize="19px"
                   fontWeight="300"
-                  lineHeight="26px"
+                  lineHeight="30px"
+                  color="rgb(255, 255, 255)"
                   {...bmwTechnicalStyles}
                 >
                   {description}
@@ -93,10 +93,10 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
               )}
               {subdescription && (
                 <Text
-                  fontSize="16px"
+                  fontSize="19px"
                   fontWeight="300"
-                  lineHeight="26px"
-                  color="rgba(255,255,255,0.7)"
+                  lineHeight="30px"
+                  color="rgba(255,255,255,0.8)"
                   {...bmwTechnicalStyles}
                 >
                   {subdescription}
@@ -106,17 +106,25 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
           )}
 
           <Button
-            variant="outline"
-            borderColor="white"
+            display="inline-flex"
+            alignItems="center"
+            justifyContent="center"
+            bg="transparent"
             color="white"
-            borderRadius="0"
-            height="48px"
-            px="12"
-            fontSize="15px"
-            fontWeight="400"
-            fontFamily={bmwFont}
-            _hover={{ bg: "white", color: "black" }}
+            boxShadow="inset 0px 0px 0px 2px rgb(255, 255, 255)"
+            border="none"
+            borderRadius="3px"
+            height="52px"
+            minHeight="52px"
+            width={{ base: "100%", md: "408px" }}
+            px="4"
+            fontSize="16px"
+            fontWeight="500"
+            lineHeight="26px"
+            cursor="pointer"
+            _hover={{ bg: "white", color: "black", boxShadow: "none" }}
             transition="all 0.3s ease"
+            {...bmwTechnicalStyles}
           >
             {buttonText}
           </Button>
@@ -128,8 +136,7 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
 
 export const PromoBanners = () => {
   return (
-    <Flex flexDirection="column" gap="24px" bg="white">
-      {/* Banner 1 - 320i */}
+    <Flex flexDirection="column" gap="48px" bg="white" pb="48px">
       <Banner
         image="/bmw_320i.jpg"
         alt="BMW 320i M Sport"
@@ -138,9 +145,7 @@ export const PromoBanners = () => {
         subdescription="Entrada de 60% + Saldo em 24 meses.*"
         buttonText="Saiba mais"
       />
-      
-      {/* Banner 2 - M235 */}
-      <Banner
+       <Banner
         image="/m235.jpg"
         alt="BMW M235 xDrive"
         title="BMW M235 xDrive"
@@ -149,7 +154,6 @@ export const PromoBanners = () => {
         buttonText="Descubra"
       />
 
-      {/* Banner 3 - iX3 */}
       <Banner
         image="/ix3.jpg"
         alt="BMW iX3"
