@@ -151,13 +151,13 @@ export const Footer = () => {
   ];
 
   const socialLinks: SocialIconProps[] = [
-    { href: 'https://facebook.com', icon: '/face.png', label: 'Facebook' },
-    { href: 'https://instagram.com', icon: '/insta.png', label: 'Instagram' },
-    { href: 'https://youtube.com', icon: '/yt.png', label: 'YouTube' },
-    { href: 'https://linkedin.com', icon: '/in.png', label: 'LinkedIn' },
-    { href: 'https://x.com', icon: '/x.png', label: 'X' },
-    { href: 'https://tiktok.com', icon: '/tiktok.png', label: 'TikTok' },
-    { href: 'https://whatsapp.com', icon: '/wpp.png', label: 'WhatsApp' },
+    { href: 'https://facebook.com', icon: '/Images/face.png', label: 'Facebook' },
+    { href: 'https://instagram.com', icon: '/Images/insta.png', label: 'Instagram' },
+    { href: 'https://youtube.com', icon: '/Images/yt.png', label: 'YouTube' },
+    { href: 'https://linkedin.com', icon: '/Images/in.png', label: 'LinkedIn' },
+    { href: 'https://x.com', icon: '/Images/x.png', label: 'X' },
+    { href: 'https://tiktok.com', icon: '/Images/tiktok.png', label: 'TikTok' },
+    { href: 'https://whatsapp.com', icon: '/Images/wpp.png', label: 'WhatsApp' },
   ];
 
   return (
@@ -172,7 +172,7 @@ export const Footer = () => {
         gap="4"
       >
         <Image
-          src="/Logo_IBAMA_2025_Escuro.webp"
+          src="/Images/Logo_IBAMA_2025_Escuro.webp"
           alt="IBAMA Proconve Homologado"
           w="268px"
           h="80px"
@@ -182,7 +182,7 @@ export const Footer = () => {
         />
 
         <Image
-          src="/legal_text_image_site.webp"
+          src="/Images/legal_text_image_site.webp"
           alt="Aviso legal"
           w="414px"
           h="123px"

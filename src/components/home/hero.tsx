@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <Box position="relative" h="840px" w="100%" overflow="hidden" bg="black">
       <Image
-        src="/bmw-m135_azul.jpg"
+        src="/Images/bmw-m135_azul.jpg"
         alt="BMW M135 xDrive"
         objectFit="cover"
         w="100%"
@@ -66,7 +66,7 @@ export const Hero = () => {
 
           <HStack gap="3" mt="4" mb="10" align="center">
             <Image 
-              src="bmw_m.png"
+              src="/Images/bmw_m.png"
               alt="BMW M Logo"
               h="25px" 
               w="auto"
