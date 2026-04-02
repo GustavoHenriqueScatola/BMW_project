@@ -31,7 +31,7 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
       right="50%"
       marginLeft="-50vw"
       marginRight="-50vw"
-      h={{ base: "450px", md: "639.75px" }} 
+      h={{ base: "450px", md: "639.75px" }}
       overflow="hidden"
       bg="black"
     >
@@ -62,8 +62,8 @@ const Banner = ({ image, alt, title, description, subdescription, buttonText }: 
         h="100%"
         w="100%"
         align="center"
-        justify="flex-start" 
-        px={{ base: "20px", md: "32px", lg: "48px" }} 
+        justify="flex-start"
+        px={{ base: "20px", md: "48px", lg: "96px" }}
         zIndex="2"
       >
         <Box color="white" maxW="696px" textAlign="left">
@@ -145,7 +145,7 @@ export const PromoBanners = () => {
         subdescription="Entrada de 60% + Saldo em 24 meses.*"
         buttonText="Saiba mais"
       />
-       <Banner
+      <Banner
         image="/m235.jpg"
         alt="BMW M235 xDrive"
         title="BMW M235 xDrive"
@@ -153,7 +153,6 @@ export const PromoBanners = () => {
         subdescription="Consulte condições."
         buttonText="Descubra"
       />
-
       <Banner
         image="/ix3.jpg"
         alt="BMW iX3"

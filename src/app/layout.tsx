@@ -1,4 +1,5 @@
 import { Providers } from '@/components/ui/providers' 
+import { Footer } from '@/components/ui/footer'
 import '../styles/globals.css'
 
 export default function RootLayout({
@@ -11,6 +12,7 @@ export default function RootLayout({
       <body>
         <Providers>
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
