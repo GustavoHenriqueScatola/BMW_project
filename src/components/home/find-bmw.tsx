@@ -68,7 +68,7 @@ export const FindBMW = () => {
       >
 
         <VStack gap="32px" align="center" flex="1" maxW="300px">
-          <Image src="/images/duplicateBmw.png" alt="" {...iconStyle} />
+          <Image src="/Images/duplicateBmw.png" alt="" {...iconStyle} />
           <Text {...titleColumnStyle}>Encontre um 0 KM.</Text>
           <Button {...bmwButtonStyle} >
             Pesquisar
@@ -76,7 +76,7 @@ export const FindBMW = () => {
         </VStack>
 
         <VStack gap="32px" align="center" flex="1" maxW="300px">
-          <Image src="/images/searchBmw.png" alt="" {...iconStyle} />
+          <Image src="/Images/searchBmw.png" alt="" {...iconStyle} />
           <Text {...titleColumnStyle}>Encontre um seminovo.</Text>
           <Button {...bmwButtonStyle} >
             Pesquisar
@@ -84,7 +84,7 @@ export const FindBMW = () => {
         </VStack>
 
         <VStack gap="32px" align="center" flex="1" maxW="320px">
-          <Image src="/images/moreBmw.png" alt="" {...iconStyle} />
+          <Image src="/Images/moreBmw.png" alt="" {...iconStyle} />
           <Text {...titleColumnStyle}>Configure o seu.</Text>
           <Button {...bmwButtonStyle}>
             Configuração e Preço

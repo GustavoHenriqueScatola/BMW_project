@@ -139,7 +139,7 @@ export const PromoBanners = () => {
   return (
     <Flex flexDirection="column" gap="48px" bg="white" pb="48px">
       <Banner
-        image="/images/bmw_320i.jpg"
+        image="/Images/bmw_320i.jpg"
         alt="BMW 320i M Sport"
         title="BMW 320i M Sport."
         description="Taxa 0% + IPVA 2026 pago."
@@ -147,7 +147,7 @@ export const PromoBanners = () => {
         buttonText="Saiba mais"
       />
       <Banner
-        image="/images/X5_bmw.jpg"
+        image="/Images/X5_bmw.jpg"
         alt="BMW X5 xDrive50e M Sport"
         title="BMW X5 xDrive50e M Sport."
         description="Taxa de 0% a.m. e saldo em 12 meses com 60% de entrada + Plano de manutenção incluso e valorização do seu seminovo.*"
@@ -155,7 +155,7 @@ export const PromoBanners = () => {
         buttonText="Saiba mais"
       />
       <Banner
-        image="/images/ix3.jpg"
+        image="/Images/ix3.jpg"
         alt="BMW iX3"
         title="BMW iX3"
         description="Acompanhe a chegada da Nova Era no Brasil."

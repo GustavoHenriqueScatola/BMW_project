@@ -176,7 +176,6 @@ export const Header = () => {
                     bg: "rgb(28, 105, 212)",
                     zIndex: 10,
                     opacity: isActive ? 1 : 0,
-                    transition: "opacity 0.2s ease",
                   }}
                 >
                   <Flex align="center" height="100%">
