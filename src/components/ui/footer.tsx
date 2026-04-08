@@ -222,14 +222,15 @@ export const Footer = () => {
           My BMW App. Conecte-se ao aplicativo e simplifique sua direção diária.
           {'  '}
           <Link
+          
             ml="30px"
             fontFamily={bmwFont}
-            fontSize="14px"
+            fontSize="16px"
             fontWeight="700"
             color="rgb(38, 38, 38)"
             textDecoration="none"
             style={{ WebkitFontSmoothing: 'antialiased' }}
-            _hover={{ textDecoration: 'underline' }}
+            _hover={{ color: '#1c69d4', textDecoration: 'none' }}
           >
             Descubra o My BMW App &gt;
           </Link>
@@ -293,8 +294,8 @@ export const Footer = () => {
       {/* ─── Copyright ─── */}
       <Box
         borderTop="1px solid rgba(0,0,0,0.1)"
-        px={{ base: '20px', md: '48px', lg: '96px' }}
-        py="30px"
+        px={{ base: '20px', md: '48px', lg: '96 px' }}
+        py="20px"
       >
         <Flex
           justify="flex-start"
