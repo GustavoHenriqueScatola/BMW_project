@@ -2,13 +2,11 @@
 
 import { Box, Flex, Heading, Text, Button, Image, Stack, HStack } from "@chakra-ui/react";
 
-import bmw01 from "./../../../public/Images/bmw-m135_azul.jpg";
-
 export const Hero = () => {
   return (
     <Box position="relative" h="840px" w="100%" overflow="hidden" bg="black">
       <Image
-        src={bmw01.src}
+        src="/Images/bmw-m135_azul.jpg"
         alt="BMW M135 xDrive"
         objectFit="cover"
         w="100%"
