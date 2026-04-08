@@ -237,7 +237,6 @@ export const Footer = () => {
         </Text>
       </Flex>
 
-      {/* ─── Conteúdo principal ─── */}
       <Box px={{ base: '20px', md: '48px', lg: '96px' }} py="48px">
         <Flex
           gap={{ base: '40px', md: '80px', lg: '120px' }}
@@ -340,7 +339,7 @@ export const Footer = () => {
           ))}
         </Flex>
       </Box>
-      {/* ─── Linha branca ─── */}
+
      <Box
       w="100%"
       h="32px"

@@ -32,7 +32,6 @@ const getExternalLink = (label: string) => {
     "Carregamento público": "https://www.bmw.com.br/pt/electric-cars/public-charging.html",
     "Tecnologia da bateria e propulsão": "https://www.bmw.com.br/pt/electric-cars/battery-technology.html",
     "Autonomia": "https://www.bmw.com.br/pt/electric-cars/electric-car-range.html",
-    // Novos links do Compre Online
     "Condições Especiais": "https://www.bmw.com.br/pt/topics/fascination-bmw/condicoes-especiais.html",
     "BMW Vendas Corporativas e Especiais": "https://www.bmw.com.br/pt/more-bmw/vendas-corporativas.html",
     "BMW Premium Selection (Seminovos)": "https://www.bmw.com.br/pt/topics/fascination-bmw/premium-selection/benefits.html",
